@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/public/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Color Graphic</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js">
+      const root = document.documentElement;
+      const colorToggle = document.getElementById('color-toggle');
+
+      colorToggle.addEventListener('click', () => {
+          root.classList.toggle('dark-mode');
+      });
+    </script>
+    
+  </body>
+</html>
